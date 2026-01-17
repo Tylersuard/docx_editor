@@ -1,0 +1,19 @@
+window:
+  window_len: 100000
+  stride: 50000
+  sampling_mode: sampled
+  max_n_fraction: 0.2
+encoder:
+  name: nucleotide_frequency
+  embedding_dim: 256
+  batch_size: 16
+model:
+  latent_count: 256
+  latent_layers: 2
+  num_heads: 8
+  dropout: 0.1
+  taxonomy_classes: 16
+  habitat_labels: 3
+inference:
+  n_windows: 2048
+  device: cpu
